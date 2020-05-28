@@ -201,7 +201,7 @@ void write_database_table(employee *buf, int cnt)
         fprintf( ptrFile, "\t\t<td>%s</td>\n", (buf + i)->name);
         fprintf( ptrFile, "\t\t<td>%s</td>\n", (buf + i)->tgid);
         fprintf( ptrFile, "\t\t<td>%s</td>\n", (buf + i)->contact);
-        fprintf( ptrFile, "\t</tr>");
+        fprintf( ptrFile, "\t</tr>\n");
     }
 
     fclose( ptrFile );
